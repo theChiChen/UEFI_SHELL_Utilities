@@ -1,0 +1,23 @@
+## @file
+#
+#  Author  : ChiChen
+#  Date    : 2015-12-22
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010006
+  PACKAGE_NAME                   = ChiChenPkg
+  PACKAGE_UNI_FILE               = ChiChenPkg.uni
+  PACKAGE_GUID                   = 6b17500d-163c-405a-bf7e-69c2d064c76f
+  PACKAGE_VERSION                = 0.01
+
+[Includes]
+  Include
+
+[LibraryClasses]
+  ##  @libraryclass  Provides basic library functions for cryptographic primitives.
+  ##
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  MdeModulePkgExtra.uni

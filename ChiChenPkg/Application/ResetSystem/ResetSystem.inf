@@ -1,0 +1,31 @@
+## @file
+#
+#  Author : ChiChen
+#  Date   : 2012-06-14
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = ResetSystem
+  FILE_GUID                      = 6D1AA07C-29A5-4d22-878F-F5EEC2B8F882
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  ResetSystem.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib

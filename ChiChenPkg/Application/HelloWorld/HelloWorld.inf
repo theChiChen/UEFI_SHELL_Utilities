@@ -1,0 +1,49 @@
+## @file
+#
+#  Author  : ChiChen
+#  Date    : 2015-12-22
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = HelloWorld
+  MODULE_UNI_FILE                = HelloWorld.uni
+  FILE_GUID                      = 1eac045f-6a08-41b3-baca-1c036722caeb
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = HelloWorldEntry
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  HelloWorld.c
+  HelloWorld.h
+  HelloWorldStrings.uni
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  HiiLib
+  DebugLib
+  UefiLib
+  UefiApplicationEntryPoint
+  
+[Guids]
+
+
+[Protocols]
+
+
+[Pcd]
+
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  HelloWorldExtra.uni
