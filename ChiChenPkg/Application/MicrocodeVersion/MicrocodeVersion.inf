@@ -1,0 +1,49 @@
+## @file
+#
+#  Author  : ChiChen
+#  Date    : 2015-12-23
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MicrocodeVersion
+  MODULE_UNI_FILE                = MicrocodeVersion.uni
+  FILE_GUID                      = 5c94fb74-9438-4b51-bc41-7ad2b97af43f
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = MicrocodeVersionEntry
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  MicrocodeVersion.c
+  MicrocodeVersion.h
+  MicrocodeVersionStrings.uni
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  HiiLib
+  DebugLib
+  UefiLib
+  UefiApplicationEntryPoint
+  
+[Guids]
+
+
+[Protocols]
+
+
+[Pcd]
+
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  MicrocodeVersionExtra.uni

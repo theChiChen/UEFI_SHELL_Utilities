@@ -1,0 +1,51 @@
+## @file
+#
+#  Author  : ChiChen
+#  Date    : 2015-12-24
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = MacAddr
+  MODULE_UNI_FILE                = MacAddr.uni
+  FILE_GUID                      = 1eac045f-6a08-41b3-baca-1c036722caeb
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = MacAddrEntry
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64
+#
+
+[Sources]
+  MacAddr.c
+  MacAddr.h
+  MacAddrStrings.uni
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  HiiLib
+  DebugLib
+  UefiLib
+  UefiApplicationEntryPoint
+  PciExpressLib
+  IoLib
+  
+[Guids]
+
+
+[Protocols]
+
+
+[Pcd]
+
+
+[UserExtensions.TianoCore."ExtraFiles"]
+  MacAddrExtra.uni

@@ -1,0 +1,15 @@
+// /** @file
+//
+//  Author  : ChiChen
+//  Date    : 2015-12-23
+//
+// **/
+
+/=#
+
+#langdef   en-US "English"
+
+#string STR_HELP						#language	en-US	"Just run this program.\r\n"
+#string STR_PARAMETER_ERROR_STRING		#language	en-US	"I do not know what you want to do?\r\n"
+
+#string STR_MICROCODE_VERSION_STRING	#language	en-US	"Micricode Patch : %X\r\n"
