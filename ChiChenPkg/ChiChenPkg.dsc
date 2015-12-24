@@ -96,6 +96,7 @@
   FileHandleLib|MdePkg/Library/UefiFileHandleLib/UefiFileHandleLib.inf
   ShellCEntryLib|ShellPkg/Library/UefiShellCEntryLib/UefiShellCEntryLib.inf
   LibC|StdLib/LibC/LibC.inf
+  PciExpressLib|MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf
 # <<-- ChiChen
 
 
@@ -176,9 +177,17 @@
 [Components]
   ChiChenPkg/Application/HelloWorld/HelloWorld.inf
   ChiChenPkg/Application/Hello/Hello.inf
+  ChiChenPkg/Application/File/File.inf
+  ChiChenPkg/Application/PciDump/PciDump.inf
+  ChiChenPkg/Application/PciIoProtocol/PciIoProtocol.inf
   ChiChenPkg/Application/printf/printf.inf
   ChiChenPkg/Application/ResetSystem/ResetSystem.inf
   ChiChenPkg/Application/Stall/Stall.inf
+  ChiChenPkg/Application/TestBoxDraw/TestBoxDraw.inf
+  ChiChenPkg/Application/CCRW/CCRW.inf
+  ChiChenPkg/Application/VerbTable/VerbTable.inf
+  ChiChenPkg/Application/MicrocodeVersion/MicrocodeVersion.inf
+  ChiChenPkg/Application/MacAddr/MacAddr.inf
 
 [Components.IA32, Components.X64]
 
